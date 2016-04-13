@@ -1,0 +1,28 @@
+{
+  "name": "alaska-render-swig",
+  "version": "0.1.0",
+  "description": "Alaska swig template render engine",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/alaska-render-swig.git"
+  },
+  "author": {
+    "email": "liang@maichong.it",
+    "name": "liang",
+    "url": "https://github.com/liangxingchen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maichong/alaska-render-swig/issues"
+  },
+  "homepage": "https://github.com/maichong/alaska-render-swig#readme",
+  "peerDependencies": {
+    "alaska": "*"
+  },
+  "dependencies": {
+    "swig": "^1.4.2"
+  }
+}
