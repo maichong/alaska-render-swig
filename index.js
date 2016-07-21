@@ -38,7 +38,10 @@ module.exports = function (service, options) {
       if (to[0] === '/' || !from) {
         return to;
       }
-      return path.resolve(from, to);
+      if (map[from]) {
+        return path.join(from, '..', to);
+      }
+      return path.join(from, to);
     },
     load: function (identifier, cb) {
       if (DEV) {
@@ -50,6 +53,9 @@ module.exports = function (service, options) {
       }
       if (!file) {
         alaska.panic(`Template file ${service.id}:${identifier} is not exists!`);
+      }
+      if (!cb) {
+        return fs.readFileSync(file, 'utf8');
       }
       fs.readFile(file, 'utf8', cb);
     }

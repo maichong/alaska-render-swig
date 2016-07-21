@@ -1,7 +1,11 @@
 {
   "name": "alaska-render-swig",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Alaska swig template render engine",
+  "keywords": [
+    "alaska",
+    "alaska-render"
+  ],
   "main": "index.js",
   "scripts": {
   },
